@@ -3,11 +3,310 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Bino</title>
+    <link rel="icon" href="./images/pngwing.png">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page">
     <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="page__header header">
+      <div class="container header__wrapper">
+        <div class="header__content">
+          <div class="top-action">
+            <a href="#" class="header__logo">
+              <img
+                src="./images/Slice_7.png"
+                alt="logo"
+                class="header__logo"
+              >
+            </a>
+          </div>
+          <a href="#menu" class="header__icon--menu">
+            <img
+              class="header__icon"
+              src="./images/menu.png"
+              alt="menu"
+            >
+          </a>
+          <nav class="header__navigation page__menu menu" id="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link menu__icon--close">
+                  <img
+                    src="./images/pngegg.png"
+                    alt="close"
+                    class="menu__icon--close"
+                  >
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">Home</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about-us">About us</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#pricing">Pricing</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#team">Team</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#blog">Blog</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__info">
+          <h3 class="header__info-info">Our Clients Are Our First Priority</h3>
+          <h1 class="header__info-title">WELCOME TO BINO</h1>
+          <div class="header__info-figure">
+            <div class="header__info-line"></div>
+            <div class="header__info-round"></div>
+            <div class="header__info-line"></div>
+          </div>
+          <p class="header__info-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          </p>
+          <div class="header__info-buttons">
+            <button class="header__info-button header__info-button--first">get started now</button>
+            <button class="header__info-button">learn more</button>
+          </div>
+        </div>
+        <div class="header__img"></div>
+      </div>
+    </header>
+    <main class="page__main">
+      <section class="our-blog" id="about-us">
+        <div class="container-head">
+          <h2 class="container-head__title">OUR BLOG</h2>
+          <p class="container-head__info">
+            Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.
+          </p>
+          <div class="container-head__figure">
+            <div class="container-head__figure-line"></div>
+            <div class="container-head__figure-round"></div>
+            <div class="container-head__figure-line"></div>
+          </div>
+        </div>
+
+        <div class="our-blog__wrapper">
+          <div class="our-blog__content">
+            <div class="our-blog__content-img our-blog__content-img--first"></div>
+            <img
+              class="our-blog__arrow"
+              src="./images/Shape_1.svg"
+            >
+            <div class="our-blog__content-info">
+              <p class="our-blog__content-info-info">art / t-shirt</p>
+              <h3 class="our-blog__content-info-title">T-SHIRT DESIGN</h3>
+              <p class="our-blog__content-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+              </p>
+              <a href="#" class="our-blog__content-info-link">Read More  >></a>
+            </div>
+          </div>
+          <div class="our-blog__content">
+            <div class="our-blog__content-img our-blog__content-img--second"></div>
+            <img
+              class="our-blog__arrow"
+              src="./images/Shape_1.svg"
+            >
+            <div class="our-blog__content-info">
+              <p class="our-blog__content-info-info">art / t-shirt</p>
+              <h3 class="our-blog__content-info-title">T-SHIRT DESIGN</h3>
+              <p class="our-blog__content-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+              </p>
+              <a href="#" class="our-blog__content-info-link">Read More  >></a>
+            </div>
+          </div>
+          <div class="our-blog__content">
+            <div class="our-blog__content-info">
+              <p class="our-blog__content-info-info">art / t-shirt</p>
+              <h3 class="our-blog__content-info-title">T-SHIRT DESIGN</h3>
+              <p class="our-blog__content-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+              </p>
+              <a href="#" class="our-blog__content-info-link">Read More  >></a>
+            </div>
+            <img
+              class="our-blog__arrow our-blog__arrow--second"
+              src="./images/Shape_1 (1).svg"
+            >
+            <div class="our-blog__content-img our-blog__content-img--third"></div>
+          </div>
+          <div class="our-blog__content">
+            <div class="our-blog__content-info">
+              <p class="our-blog__content-info-info">art / t-shirt</p>
+              <h3 class="our-blog__content-info-title">T-SHIRT DESIGN</h3>
+              <p class="our-blog__content-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+              </p>
+              <a href="#" class="our-blog__content-info-link">Read More  >></a>
+            </div>
+            <img
+              class="our-blog__arrow our-blog__arrow--second"
+              src="./images/Shape_1 (1).svg"
+            >
+            <div class="our-blog__content-img our-blog__content-img--fourth"></div>
+          </div>
+        </div>
+        
+        <div class="our-blog__details" id="portfolio">
+          <div class="our-blog__details-block">
+            <div class="our-blog__details-border">
+              <img
+                src="./images/hart.svg"
+                alt="hurt"
+                class="our-blog__details-img"
+              >
+            </div>
+            <span>
+              <h4 class="our-blog__details-title">3891</h4>
+              <p class="our-blog__details-text">User Favourites</p>
+            </span>
+          </div>
+          <div class="our-blog__details-block">
+            <div class="our-blog__details-border">
+              <img
+                src="./images/something.svg"
+                alt="hurt"
+                class="our-blog__details-img"
+              >
+            </div>
+            <span>
+              <h4 class="our-blog__details-title">281K</h4>
+              <p class="our-blog__details-text">Posts Last 24 Hours</p>
+            </span>
+          </div>
+          <div class="our-blog__details-block">
+            <div class="our-blog__details-border">
+              <img
+                src="./images/like.svg"
+                alt="hurt"
+                class="our-blog__details-img"
+              >
+            </div>
+            <span>
+              <h4 class="our-blog__details-title">618</h4>
+              <p class="our-blog__details-text">Total Posts</p>
+            </span>
+          </div>
+          <div class="our-blog__details-block">
+            <div class="our-blog__details-border">
+              <img
+                src="./images/star.svg"
+                alt="hurt"
+                class="our-blog__details-img"
+              >
+            </div>
+            <span>
+              <h4 class="our-blog__details-title">178</h4>
+              <p class="our-blog__details-text">Campaigns</p>
+            </span>
+          </div>
+          <div class="our-blog__details-block">
+            <div class="our-blog__details-border">
+              <img
+                src="./images/flag.svg"
+                alt="hurt"
+                class="our-blog__details-img"
+              >
+            </div>
+            <span>
+              <h4 class="our-blog__details-title">285</h4>
+              <p class="our-blog__details-text">Amazing Features</p>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container-head">
+          <h2 class="container-head__title">OUR PRICING</h2>
+          <p class="container-head__info">
+            A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.
+          </p>
+          <div class="container-head__figure">
+            <div class="container-head__figure-line"></div>
+            <div class="container-head__figure-round"></div>
+            <div class="container-head__figure-line"></div>
+          </div>
+        </div>
+
+        <div class="pricing__wrapper carousel slide" id="carouselExampleControls" data-ride="carousel">
+          
+          <div class="pricing__card">
+            <span class="pricing__card-grey">
+              <h3 class="pricing__card-title">Starter</h3>
+            </span>
+            
+            <div class="pricing__card-round">
+              <p class="pricing__card-price">$19</p>
+              <p class="pricing__card-description">per month</p>
+            </div>
+            <ul class="pricing__card-list">
+              <li class="pricing__card-item">Competition Analysis Methods</li>
+              <li class="pricing__card-item">All Ranked URLs</li>
+              <li class="pricing__card-item">International Support System</li>
+              <li class="pricing__card-item">Social Media Tracking</li>
+            </ul>
+            <button class="pricing__card-button">Choose plan</button>
+          </div>
+
+          <div class="pricing__card">
+            <span class="pricing__card-grey pricing__card-grey--red">
+              <h3 class="pricing__card-title">PREMIUM</h3>
+            </span>
+            
+            <div class="pricing__card-round">
+              <p class="pricing__card-price pricing__card-price--red">$39</p>
+              <p class="pricing__card-description">per month</p>
+            </div>
+            <ul class="pricing__card-list">
+              <li class="pricing__card-item">Competition Analysis Methods</li>
+              <li class="pricing__card-item">All Ranked URLs</li>
+              <li class="pricing__card-item">International Support System</li>
+              <li class="pricing__card-item">Social Media Tracking</li>
+            </ul>
+            <button class="pricing__card-button pricing__card-button--red">Choose plan</button>
+          </div>
+
+          <div class="pricing__card">
+            <span class="pricing__card-grey">
+              <h3 class="pricing__card-title">BUSINESS</h3>
+            </span>
+            
+            <div class="pricing__card-round">
+              <p class="pricing__card-price">$99</p>
+              <p class="pricing__card-description">per month</p>
+            </div>
+            <ul class="pricing__card-list">
+              <li class="pricing__card-item">Competition Analysis Methods</li>
+              <li class="pricing__card-item">All Ranked URLs</li>
+              <li class="pricing__card-item">International Support System</li>
+              <li class="pricing__card-item">Social Media Tracking</li>
+            </ul>
+            <button class="pricing__card-button">Choose plan</button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
