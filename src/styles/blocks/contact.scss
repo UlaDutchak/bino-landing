@@ -1,0 +1,155 @@
+.contact {
+  box-sizing: border-box;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    justify-items: center;
+    gap: 28px;
+    margin-bottom: 140px;
+
+    @include onTablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__info {
+    width: 75%;
+    height: 566px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: flex-end;
+    
+    @include onTablet {
+      height: 400px;
+    }
+
+    &-adress,
+    &-call-us,
+    &-email {
+      margin-left: 90px;
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 1100px) {
+        margin-left: 30px;
+      }
+    }
+
+    &-title {
+      color: #e74e3e;
+      font-size: 24px;
+      text-transform: uppercase;
+
+      @include onTablet {
+        font-size: 16px;
+      }
+    }
+
+    &-link {
+      color: #999999;
+      font-family: "Open Sans";
+      font-size: 18px;
+      text-decoration: none;
+
+      &:hover {
+        -webkit-text-stroke: 0.5px #3e3e3e;
+      }
+      
+      @include onTablet {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__form {
+    width: 75%;
+    height: 566px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    justify-self: flex-start;
+    display: flex;
+    justify-content: center;
+
+    @include onTablet {
+      height: 400px;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-input {
+      width: 365px;
+      height: 40px;
+      margin-bottom: 20px;
+      border: transparent;
+      border-bottom: 1px solid #999999;
+      transition: transform 0.3s;
+
+      @include onTablet {
+        width: 205px;
+        height: 24px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #999999;
+      }
+
+      &-textarea {
+        height: 144px;
+        font-family: inherit;
+        resize: none;
+
+        @include onTablet {
+          height: 90px;
+        }
+      }
+    }
+    
+    &-button {
+      width: 157px;
+      height: 44px;
+      color: #f1ebe7;
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+      background-color: #e74c3c;
+      border: 1px solid #e74c3c;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+
+      @include onTablet {
+        max-width: 150px;
+      }
+      
+      @include onMobile {
+        max-width: 100px;
+        min-height: 60px;
+      }
+    }
+
+    &-button:hover {
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+      background-color: transparent;
+      border: 1px solid #e74c3c;
+      color: #e74c3c;
+    }
+  }
+}
