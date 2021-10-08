@@ -57,8 +57,7 @@
     }
 
     @include onMobile {
-      width: 60px;
-      height: 60px;
+      visibility: hidden;
     }
   }
 
@@ -71,7 +70,6 @@
     margin: auto;
 
     &-info {
-      margin: 100px 0 0;
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 24px;
       padding: 0;
@@ -79,10 +77,6 @@
 
       @include onTablet {
         font-size: 16px;
-      }
-
-      @include onMobile {
-        margin: 50px 0 0;
       }
     }
 

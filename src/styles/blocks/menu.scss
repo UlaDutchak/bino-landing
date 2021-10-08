@@ -1,4 +1,10 @@
 .menu {
+  @include onTablet {
+    background-color: #fff;
+    height: 100vh;
+    z-index: 3;
+    order: 1;
+  }
   
   &__list {
     display: flex;
