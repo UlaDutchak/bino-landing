@@ -1,0 +1,111 @@
+.pricing {
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 16px;
+    justify-content: center;
+
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(3, 200px);
+    }
+  }
+
+  &__card {
+    height: 609px;
+    background-color: #f4f5f9;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (max-width: 1100px) {
+      
+    }
+
+    &-grey {
+      height: 205px;
+      background-color: #999999;
+      z-index: 0;
+
+      &--red {
+        background-color: #e74c3c;
+      }
+    }
+
+    &-title {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    &-round {
+      width: 154px;
+      height: 153px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      top: 23%;
+      left: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // border: 10px solid hsla(0, 0%, 110%, .5);
+      // border: 20px solid rgba(255, 255, 255, 0.3);
+
+      @media (max-width: 1100px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    &-price {
+      color: #999999;
+      font-family: "Source Sans Pro";
+      font-size: 40px;
+      font-weight: 700;
+      margin: 0;
+
+      @media (max-width: 1100px) {
+        font-size: 25px;
+      }
+
+      &--red {
+        color: #e74c3c;
+      }
+    }
+
+    &-description {
+      font-size: 13px;
+      color: #999999;
+    }
+
+    &-list {
+      margin: 125px 0 48px;
+      list-style: none;
+      padding: 0;
+    }
+
+    &-item{
+      text-align: center;
+      color: #999999;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    &-button {
+      margin: auto;
+      width: 145px;
+      height: 46px;
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+      background-color: #999999;
+      border: transparent;
+
+      &--red {
+        background-color: #e74c3c;
+      }
+    }
+  }
+}

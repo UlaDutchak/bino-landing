@@ -1,0 +1,189 @@
+.header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(../images/Foreground.png);
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+  &__wrapper {
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-top: 40px;
+
+    @include onMobile {
+      width: 100px;
+      height: 30px;
+      margin-top: 20px;
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 1%;
+    left: 48%;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    background-image: url(../images/Forma_1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include onTablet {
+      width: 60px;
+      height: 60px;
+    }
+
+    @include onMobile {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f4f5f9;
+    margin: auto;
+
+    &-info {
+      margin: 100px 0 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 24px;
+      padding: 0;
+      text-align: center;
+
+      @include onTablet {
+        font-size: 16px;
+      }
+
+      @include onMobile {
+        margin: 50px 0 0;
+      }
+    }
+
+    &-title {
+      font-size: 72px;
+      margin: 45px 0 0;
+      text-align: center;
+
+      @include onTablet {
+        font-size: 54px;
+      }
+
+      @include onMobile {
+        font-size: 44px;
+        margin: 30px 0 0;
+      }
+    }
+
+    &-text {
+      font-size: 14px;
+      max-width: 580px;
+      text-align: center;
+      margin: 0 0 60px;
+
+      @include onTablet {
+        font-size: 12px;
+      }
+
+      @include onMobile {
+        margin: 0 0 30px;
+      }
+    }
+
+    &-figure {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0;
+
+      @include onMobile {
+        margin: 15px 0;
+      }
+    }
+
+    &-line {
+      width: 80px;
+      height: 1px;
+      background-color: #f1ebe7;
+    }
+
+    &-round {
+      width: 8px;
+      height: 7px;
+      background-color: #e74c3c;
+      border-radius: 50%;
+      margin: 0 13px;
+    }
+
+    &-buttons {
+      @include onMobile {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  
+    &-button {
+      width: 225px;
+      height: 52px;
+      color: #f1ebe7;
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+
+      @include onTablet {
+        max-width: 150px;
+      }
+      
+      @include onMobile {
+        max-width: 100px;
+        min-height: 60px;
+      }
+    }
+
+    &-button:hover {
+      box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+      background-color: #e74c3c;
+      border: 1px solid #e74c3c;
+    }
+
+    &-button--first {
+      margin-right: 30px;
+
+      @include onMobile {
+        margin-right: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.container {
+  max-width: 1200px;
+  padding: 0 40px;
+
+  &-head {
+    &__title {
+      text-shadow: 0 1px 0 #ffffff;
+      color: #6a6a6a;
+      font-family: "Source Sans Pro";
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 35px 0 0;
+    }
+    
+    &__info {
+      color: #999999;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      margin: 32px 0 25px;
+      text-align: center;
+    }
+  
+    &__figure {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0 50px;
+  
+      @include onMobile {
+        margin: 15px 0;
+      }
+  
+      &-line {
+        width: 80px;
+        height: 1px;
+        background-color: #999999;
+      }
+    
+      &-round {
+        width: 8px;
+        height: 7px;
+        background-color: #e74c3c;
+        border-radius: 50%;
+        margin: 0 13px;
+      }
+    }
+  }
+}

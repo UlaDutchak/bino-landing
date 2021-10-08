@@ -1,0 +1,58 @@
+.menu {
+  
+  &__list {
+    display: flex;
+    list-style: none;
+    margin-top: 60px;
+
+    @include onTablet {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      height: 100vh;
+      z-index: 3;
+      order: 1;
+    }
+  }
+
+  &__icon--close {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: transparent;
+    }
+  }
+
+  &__item {
+    margin-left: 30px;
+    @include onTablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f5f9;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+    padding-bottom: 15px;
+
+    @include onTablet {
+      color: #000;
+      font-weight: bold;
+    }
+  }
+
+  &__link:hover {
+    color: #e74c3c;
+    border-bottom: 2px solid #e74c3c;
+  }
+}
