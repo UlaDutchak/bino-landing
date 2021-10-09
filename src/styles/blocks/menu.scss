@@ -13,6 +13,7 @@
 
     @include onTablet {
       margin-top: 0;
+      padding: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -45,7 +46,7 @@
   &__link {
     text-decoration: none;
     text-transform: uppercase;
-    color: #f4f5f9;
+    color: $color-white;
     font-size: 14px;
     font-weight: 400;
     transition: 0.3s;
@@ -58,8 +59,8 @@
   }
 
   &__link:hover {
-    color: #e74c3c;
+    color: $color-orange;
     text-decoration: none;
-    border-bottom: 2px solid #e74c3c;
+    border-bottom: 2px solid $color-orange;
   }
 }
