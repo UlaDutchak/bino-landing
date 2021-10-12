@@ -1,5 +1,4 @@
 .contact {
-  box-sizing: border-box;
   background-color: $color-white;
   padding-top: 80px;
   
@@ -57,7 +56,6 @@
 
     &-link {
       color: $color-grey;
-      font-family: "Open Sans";
       font-size: 18px;
       text-decoration: none;
 
@@ -96,15 +94,10 @@
       margin-bottom: 20px;
       border: transparent;
       border-bottom: 1px solid $color-grey;
-      transition: transform 0.3s;
 
       @include onTablet {
         width: 205px;
         height: 24px;
-      }
-
-      &:hover {
-        transform: scale(1.1);
       }
 
       &::placeholder {

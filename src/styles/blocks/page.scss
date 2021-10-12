@@ -1,6 +1,7 @@
 .page {
   scroll-behavior: smooth;
   min-width: 280px;
+  box-sizing: border-box;
 
   &__menu {
     transform: translateX(0);

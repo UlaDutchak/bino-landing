@@ -9,7 +9,6 @@
   &__list {
     display: flex;
     list-style: none;
-    margin-top: 60px;
 
     @include onTablet {
       margin-top: 0;
@@ -22,7 +21,7 @@
       height: 100vh;
       z-index: 3;
       order: 1;
-    }
+    }    
   }
 
   &__icon--close {
@@ -56,11 +55,12 @@
       color: #000;
       font-weight: bold;
     }
-  }
 
-  &__link:hover {
-    color: $color-orange;
-    text-decoration: none;
-    border-bottom: 2px solid $color-orange;
+    &--first,
+    &:hover {
+      color: $color-orange;
+      text-decoration: none;
+      border-bottom: 2px solid $color-orange;
+    }
   }
 }

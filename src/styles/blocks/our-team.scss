@@ -1,6 +1,8 @@
 .our-team {
   background-image: url(../images/Background1.png);
   margin: 0 auto;
+  box-sizing: border-box;
+
   &__main-wrapper {
     background-size: cover;
     background-repeat: no-repeat;

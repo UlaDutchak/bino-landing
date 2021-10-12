@@ -1,15 +1,14 @@
 .header {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom center;
   background-image: url(../images/Foreground.png);
   width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
+  height: 113vh;
+  position: relative;
 
   &__wrapper {
     margin: 0 auto;
-    position: relative;
   }
 
   &__content {
@@ -17,15 +16,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 60px;
+
+    @include onTablet {
+      padding-top: 30px;
+    }
   }
 
   &__logo {
-    margin-top: 40px;
 
+    &--link {
+      width: 0;
+      height: 0;
+      padding: 0;
+    }
     @include onMobile {
       width: 100px;
-      height: 30px;
-      margin-top: 20px;
+      height: 40px;
     }
   }
 
@@ -41,24 +48,33 @@
 
   &__img {
     position: absolute;
-    bottom: -18%;
+    bottom: 0%;
     left: 47%;
     width: 74px;
     height: 74px;
     border-radius: 50%;
-    background-color: $color-white;
-    background-image: url(../images/Forma_1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: padding-box;
+    background: $color-white url(../images/Forma_1.svg) no-repeat center padding-box;
     border: 3px solid hsla(0, 0%, 110%, .5);
 
     @include onTablet {
-      visibility: hidden;
+      width: 60px;
+      height: 60px;
     }
 
     @include onMobile {
       visibility: hidden;
+    }
+  }
+
+  &__line {
+    width: 100vw;
+    height: 1px;
+    background-color: rgb(216, 217, 219);
+    position: absolute;
+    top: 87%;
+
+    @include onTablet {
+      top: 89%;
     }
   }
 
@@ -68,7 +84,7 @@
     justify-content: center;
     align-items: center;
     color: $color-white;
-    min-height: 70vh;
+    height: 80vh;
 
     &-info {
       font-family: 'Source Sans Pro', sans-serif;
@@ -138,9 +154,9 @@
     }
 
     &-buttons {
-      @include onMobile {
+      @include onTablet {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
       }
     }
   
@@ -148,7 +164,7 @@
       width: 225px;
       height: 52px;
       color: #f1ebe7;
-      background-color: transparent;
+      background: transparent;
       border: 1px solid #ffffff;
       border-radius: 5px;
       text-transform: uppercase;
@@ -156,28 +172,19 @@
       font-weight: 700;
       cursor: pointer;
       transition: 0.3s;
-
-      @include onTablet {
-        max-width: 150px;
-      }
-      
-      @include onMobile {
-        max-width: 100px;
-        height: 80px;
-      }
     }
 
     &-button:hover {
       box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
-      background-color: $color-orange;
+      background: $color-orange;
       border: 1px solid $color-orange;
     }
 
     &-button--first {
       margin-right: 30px;
 
-      @include onMobile {
-        margin-right: 15px;
+      @include onTablet {
+        margin: 0 15px 15px 0;
       }
     }
   }
@@ -189,16 +196,17 @@
     
     &-left {
       position: absolute;
-      top: 50%;
+      top: 40%;
       opacity: 0.5;
       cursor: pointer;
     }
 
     &-right {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 93%;
       cursor: pointer;
     }
   }
 }
+

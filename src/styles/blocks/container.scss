@@ -1,6 +1,7 @@
 .container {
   max-width: 1200px;
   padding: 0 40px;
+  box-sizing: border-box;
 
   &-head {
     &__title {
@@ -22,7 +23,6 @@
     
     &__info {
       color: $color-grey;
-      font-family: "Open Sans";
       font-size: 14px;
       font-weight: 400;
       margin: 32px 10px 25px;
