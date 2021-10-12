@@ -1,6 +1,6 @@
 .menu {
   @include onTablet {
-    background-color: #fff;
+    background: #fff;
     height: 100vh;
     z-index: 3;
     order: 1;

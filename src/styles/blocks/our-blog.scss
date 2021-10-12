@@ -8,7 +8,7 @@
     
     @include onTablet {
       display: grid;
-      grid-template-columns: 1fr; 
+      grid-template-columns: 1fr;
     }
   }
 
@@ -23,6 +23,17 @@
 
     @include onMobile {
       display: none;
+    }
+
+    &--down {
+      display: none;
+
+      @include onMobile {
+        display: block;
+        position: absolute;
+        top: 44%;
+        left: 38%;
+      }
     }
   }
 
@@ -123,6 +134,7 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    min-height: 25vw;
     position: relative;
 
     @include onMobile {
@@ -140,7 +152,7 @@
 
       @include onMobile {
         width: 100%;
-        min-height: 300px;
+        height: 100vw;
         order: 0;
       }
 
@@ -164,20 +176,21 @@
     &-info {
       display: flex;
       flex-direction: column;
-      padding: 20px;
+      padding: 10px;
       background-color: $color-red;
       color: #fff;
 
       @include onMobile {
         order: 1;
+        height: 100vw;
       }
 
       &-info {
-        font-size: 14px;
+        font-size: 12px;
       }
 
       &-title {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 400;
         cursor: pointer;
         
@@ -191,7 +204,6 @@
           color: #fff;
           border: 1px solid #fff;
           transition: width 500ms;
-          
         }
     
         &:hover {
@@ -202,7 +214,7 @@
       }
 
       &-text {
-        font-size: 16px;
+        font-size: 14px;
       }
 
       &-link {

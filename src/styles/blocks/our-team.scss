@@ -1,5 +1,5 @@
 .our-team {
-  background-image: url(../images/Background1.png);
+  // background-image: url(../images/Background1.png);
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -10,7 +10,7 @@
     background-image: url(../images/Curve.png);
     height: 744px;
     position: relative;
-    max-width: 1400px;
+    // max-width: 1400px;
     margin: auto;
 
     @media(max-width: 1100px) {
@@ -51,6 +51,7 @@
       position: absolute;
       top: 68%;
       left: 10%;
+      
       @media(max-width: 1100px) {
         position: static;
       }
@@ -60,6 +61,11 @@
       position: absolute;
       top: 58%;
       left: 30%;
+
+      @media(min-width: 1500px) {
+        top: 54%;
+      }
+      
       @media(max-width: 1100px) {
         position: static;
       }
@@ -69,6 +75,7 @@
       position: absolute;
       top: 52%;
       left: 50%;
+      
       @media(max-width: 1100px) {
         position: static;
       }
@@ -78,6 +85,11 @@
       position: absolute;
       top: 54%;
       left: 70%;
+
+      @media(min-width: 1500px) {
+        top: 57%;
+      }
+      
       @media(max-width: 1100px) {
         position: static;
       }
@@ -87,6 +99,23 @@
       position: absolute;
       top: 58%;
       left: 90%;
+
+      @media(min-width: 1500px) {
+        top: 52%;
+      }
+
+      @media(min-width: 1650px) {
+        top: 47%;
+      }
+      
+      @media(min-width: 1750px) {
+        top: 37%;
+      }
+
+      @media(min-width: 1850px) {
+        top: 28%;
+      }
+      
       @media(max-width: 1100px) {
         position: static;
       }

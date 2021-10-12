@@ -1,5 +1,5 @@
 .contact {
-  background-color: $color-white;
+  background: $color-white;
   padding-top: 80px;
   
   &__wrapper {
@@ -21,7 +21,7 @@
     width: 75%;
     height: 566px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,27 +123,18 @@
       height: 44px;
       color: #f1ebe7;
       box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
-      background-color: $color-orange;
+      background: $color-orange;
       border: 1px solid $color-orange;
       text-transform: uppercase;
       font-size: 14px;
       font-weight: 700;
       cursor: pointer;
       transition: 0.3s;
-
-      @include onTablet {
-        max-width: 150px;
-      }
-      
-      @include onMobile {
-        max-width: 100px;
-        min-height: 60px;
-      }
     }
 
     &-button:hover {
       box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
-      background-color: transparent;
+      background: transparent;
       border: 1px solid $color-orange;
       color: $color-orange;
     }

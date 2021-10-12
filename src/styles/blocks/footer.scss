@@ -1,5 +1,5 @@
 .footer {
-  background-color: #000;
+  background: #000;
   display: flex;
   justify-content: center;
   position: relative;
@@ -42,10 +42,6 @@
   &__img {
     filter: contrast(0%);
     transition: transform 0.3s;
-
-    @include onMobile {
-      
-    }
 
     &:hover {
       transform: scale(1.2);

@@ -190,7 +190,7 @@
   }
 
   &__slider {
-    @include onTablet {
+    @include onMobile {
       visibility: hidden;
     }
     
@@ -199,6 +199,11 @@
       top: 40%;
       opacity: 0.5;
       cursor: pointer;
+
+      @include onTablet {
+        width: 30px;
+        height: 30px;
+      }
     }
 
     &-right {
@@ -206,6 +211,12 @@
       top: 40%;
       left: 93%;
       cursor: pointer;
+
+      @include onTablet {
+        left: 89%;
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
