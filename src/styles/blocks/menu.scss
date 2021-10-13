@@ -1,6 +1,6 @@
 .menu {
   @include onTablet {
-    background: #fff;
+    background: $color-whitest;
     height: 100vh;
     z-index: 3;
     order: 1;
@@ -17,7 +17,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #fff;
+      background-color: $color-whitest;
       height: 100vh;
       z-index: 3;
       order: 1;
@@ -46,14 +46,14 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $color-white;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: $normalFontSize;
+    font-weight: $fontWeightNormal;
     transition: 0.3s;
     padding-bottom: 15px;
 
     @include onTablet {
-      color: #000;
-      font-weight: bold;
+      color: $color-black;
+      font-weight: $fontWeightBold;
     }
 
     &--first,

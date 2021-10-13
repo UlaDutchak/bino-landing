@@ -71,7 +71,7 @@
     &-border {
       width: 111px;
       height: 111px;
-      border: 1px solid #ffffff;
+      border: 1px solid $color-whitest;
       border-radius: 50%;
       position: relative;
 
@@ -104,15 +104,15 @@
     }
 
     &-title {
-      font-size: 30px;
-      font-weight: 700;
+      font-size: $smallTitleSize;
+      font-weight: $fontWeightBold;
       font-style: normal;
       color: $color-white;
       margin: 40px 0 0;
       text-align: center;
 
       @include onTablet {
-        font-size: 25px;
+        font-size: $largeFontSize;
       }
 
       @include onMobile {
@@ -126,7 +126,7 @@
       text-align: center;
 
       @include onTablet {
-        font-size: 14px;
+        font-size: $normalFontSize;
       }
     }
   }
@@ -178,7 +178,7 @@
       flex-direction: column;
       padding: 10px;
       background-color: $color-red;
-      color: #fff;
+      color: $color-whitest;
 
       @include onMobile {
         order: 1;
@@ -186,12 +186,12 @@
       }
 
       &-info {
-        font-size: 12px;
+        font-size: $smallFontSize;
       }
 
       &-title {
-        font-size: 22px;
-        font-weight: 400;
+        font-size: $biggerFontSize;
+        font-weight: $fontWeightNormal;
         cursor: pointer;
         
         &::after {
@@ -201,8 +201,8 @@
           width: 53px;
           height: 1px;
           margin-top: 6px;
-          color: #fff;
-          border: 1px solid #fff;
+          color: $color-whitest;
+          border: 1px solid $color-whitest;
           transition: width 500ms;
         }
     
@@ -214,14 +214,15 @@
       }
 
       &-text {
-        font-size: 14px;
+        font-size: $normalFontSize;
+        padding: 3px;
       }
 
       &-link {
         text-decoration: none;
         font-style: italic;
-        font-weight: bold;
-        color: #fff;
+        font-weight: $fontWeightBold;
+        color: $color-whitest;
         transition: 0.3s;
       }
 

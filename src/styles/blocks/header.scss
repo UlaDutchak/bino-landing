@@ -31,7 +31,7 @@
       padding: 0;
     }
     @include onMobile {
-      width: 100px;
+      width: $squareSize;
       height: 40px;
     }
   }
@@ -88,38 +88,38 @@
 
     &-info {
       font-family: 'Source Sans Pro', sans-serif;
-      font-size: 24px;
+      font-size: $largeFontSize;
       padding: 0;
       text-align: center;
 
       @include onTablet {
-        font-size: 16px;
+        font-size: $mediumFontSize;
       }
     }
 
     &-title {
-      font-size: 72px;
+      font-size: $hugeTitleSize;
       margin: 45px 0 0;
       text-align: center;
 
       @include onTablet {
-        font-size: 54px;
+        font-size: $largeTitleSize;
       }
 
       @include onMobile {
-        font-size: 44px;
+        font-size: $bigTitleSize;
         margin: 30px 0 0;
       }
     }
 
     &-text {
-      font-size: 14px;
+      font-size: $normalFontSize;
       max-width: 580px;
       text-align: center;
       margin: 0 0 60px;
 
       @include onTablet {
-        font-size: 12px;
+        font-size: $smallFontSize;
       }
 
       @include onMobile {
@@ -142,7 +142,7 @@
     &-line {
       width: 80px;
       height: 1px;
-      background-color: #f1ebe7;
+      background-color: $color-ivory;
     }
 
     &-round {
@@ -163,13 +163,13 @@
     &-button {
       width: 225px;
       height: 52px;
-      color: #f1ebe7;
+      color: $color-ivory;
       background: transparent;
-      border: 1px solid #ffffff;
+      border: 1px solid $color-whitest;
       border-radius: 5px;
       text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700;
+      font-size: $normalFontSize;
+      font-weight: $fontWeightBold;
       cursor: pointer;
       transition: 0.3s;
     }

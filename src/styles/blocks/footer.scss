@@ -1,5 +1,5 @@
 .footer {
-  background: #000;
+  background: $color-black;
   display: flex;
   justify-content: center;
   position: relative;
@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (min-width:1500px) {
+    @include onBiggerDesktop {
       width: 1200px
     }
 
@@ -51,7 +51,7 @@
   &__text {
     opacity: 0.75;
     color: $color-grey;
-    font-size: 14px;
+    font-size: $normalFontSize;
     margin-right: 10px;
   }
 

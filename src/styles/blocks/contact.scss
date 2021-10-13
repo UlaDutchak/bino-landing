@@ -21,7 +21,7 @@
     width: 75%;
     height: 566px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    background: #ffffff;
+    background: $color-whitest;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,24 +39,24 @@
       display: flex;
       flex-direction: column;
 
-      @media (max-width: 1100px) {
+      @include onSmallDesktop {
         margin-left: 30px;
       }
     }
 
     &-title {
       color: $color-red;
-      font-size: 24px;
+      font-size: $largeFontSize;
       text-transform: uppercase;
 
       @include onTablet {
-        font-size: 16px;
+        font-size: $mediumFontSize;
       }
     }
 
     &-link {
       color: $color-grey;
-      font-size: 18px;
+      font-size: $bigFontSize;
       text-decoration: none;
 
       &:hover {
@@ -64,7 +64,7 @@
       }
       
       @include onTablet {
-        font-size: 14px;
+        font-size: $normalFontSize;
       }
     }
   }
@@ -73,7 +73,7 @@
     width: 75%;
     height: 566px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: $color-whitest;
     justify-self: flex-start;
     display: flex;
     justify-content: center;
@@ -101,9 +101,9 @@
       }
 
       &::placeholder {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
+        font-size: $normalFontSize;
+        font-weight: $fontWeightNormal;
+        line-height: $largeFontSize;
         color: $color-grey;
       }
 
@@ -121,13 +121,13 @@
     &-button {
       width: 157px;
       height: 44px;
-      color: #f1ebe7;
+      color: $color-ivory;
       box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
       background: $color-orange;
       border: 1px solid $color-orange;
       text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700;
+      font-size: $normalFontSize;
+      font-weight: $fontWeightBold;
       cursor: pointer;
       transition: 0.3s;
     }

@@ -5,26 +5,26 @@
 
   &-head {
     &__title {
-      text-shadow: 0 1px 0 #ffffff;
-      color: #6a6a6a;
+      text-shadow: 0 1px 0 $color-whitest;
+      color: $color-grey-broun;
       font-family: "Source Sans Pro";
-      font-size: 36px;
-      font-weight: 700;
+      font-size: $normalTitleSize;
+      font-weight: $fontWeightBold;
       text-align: center;
       text-transform: uppercase;
       margin: 0;
 
       &--white {
-        color: #fff;
-        font-weight: normal;
+        color: $color-whitest;
+        font-weight: $fontWeightNormal;
         padding-top: 150px;
       }
     }
     
     &__info {
       color: $color-grey;
-      font-size: 14px;
-      font-weight: 400;
+      font-size: $normalFontSize;
+      font-weight: $fontWeightNormal;
       margin: 32px 10px 25px;
       text-align: center;
 
@@ -50,7 +50,7 @@
         background-color: $color-grey;
 
         &--white {
-          background-color: #fff;
+          background-color: $color-whitest;
         }
       }
     

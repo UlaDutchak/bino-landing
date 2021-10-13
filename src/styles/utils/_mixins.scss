@@ -1,15 +1,42 @@
-@mixin onTablet {
-  @media (max-width: 900px) {
+@mixin onHugePlusDesktop {
+  @media (min-width: $hugePlusDesktop) {
     @content;
-  
   }
+}
 
+@mixin onHugeDesktop {
+  @media (min-width: $hugeDesktop) {
+    @content;
+  }
+}
+
+@mixin onLargeDesktop {
+  @media (min-width: $largeDesktop) {
+    @content;
+  }
+}
+
+@mixin onBiggerDesktop {
+  @media (min-width: $biggerDesktop) {
+    @content;
+  }
+}
+
+
+@mixin onSmallDesktop {
+  @media (max-width: $smallDesktop) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: $tabletScreen) {
+    @content;
+  }
 }
 
 @mixin onMobile {
-  @media (max-width: 600px) {
+  @media (max-width: $mobileScreen) {
     @content;
-  
   }
-
 }

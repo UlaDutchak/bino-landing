@@ -8,7 +8,7 @@
     justify-content: center;
     margin: 0 10px;
 
-    @media (max-width: 1100px) {
+    @include onSmallDesktop {
       grid-template-columns: repeat(3, 200px);
     }
 
@@ -44,9 +44,9 @@
     }
 
     &-title {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: bold;
+      color: $color-whitest;
+      font-size: $largeFontSize;
+      font-weight: $fontWeightBold;
       text-align: center;
       margin-top: 50px;
     }
@@ -54,7 +54,7 @@
     &-round {
       width: 154px;
       height: 153px;
-      background-color: #ffffff;
+      background-color: $color-whitest;
       border-radius: 50%;
       position: absolute;
       top: 23%;
@@ -66,9 +66,9 @@
       background-clip: padding-box;
       border: 10px solid hsla(0, 0%, 110%, .4);
 
-      @media (max-width: 1100px) {
-        width: 100px;
-        height: 100px;
+      @include onSmallDesktop {
+        width: $squareSize;
+        height: $squareSize;
         top: 25%;
         left: 21%;
       }
@@ -84,16 +84,16 @@
     &-price {
       color: $color-grey;
       font-family: "Source Sans Pro";
-      font-size: 40px;
-      font-weight: 700;
+      font-size: $mediumTitleSize;
+      font-weight: $fontWeightBold;
       margin: 0;
 
-      @media (max-width: 1100px) {
-        font-size: 25px;
+      @include onSmallDesktop {
+        font-size: $largeFontSize;
       }
 
       @include onMobile {
-        font-size: 40px;
+        font-size: $mediumTitleSize;
       }
 
       &--red {
@@ -102,7 +102,7 @@
     }
 
     &-description {
-      font-size: 13px;
+      font-size: $smallFontSize;
       color: $color-grey;
     }
 
@@ -115,7 +115,7 @@
     &-item{
       text-align: center;
       color: $color-grey;
-      font-size: 14px;
+      font-size: $normalFontSize;
       margin-bottom: 15px;
     }
 

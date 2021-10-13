@@ -1,6 +1,4 @@
 .our-team {
-  // background-image: url(../images/Background1.png);
-  margin: 0 auto;
   box-sizing: border-box;
 
   &__main-wrapper {
@@ -10,10 +8,9 @@
     background-image: url(../images/Curve.png);
     height: 744px;
     position: relative;
-    // max-width: 1400px;
     margin: auto;
 
-    @media(max-width: 1100px) {
+    @include onSmallDesktop {
       background-image: url(../images/Background1.png);
     }
   }
@@ -23,9 +20,10 @@
     flex-direction: row;
     justify-content: space-around;
 
-    @media(max-width: 1100px) {
+    @include onSmallDesktop {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
     }
 
     @include onTablet {
@@ -34,6 +32,7 @@
 
     @include onMobile {
       grid-template-columns: 1fr;
+      gap: 0;
     }
   }
 
@@ -43,7 +42,7 @@
     justify-content: center;
     align-items: center;
 
-    @media(max-width: 1100px) {
+    @include onSmallDesktop {
       flex-direction: row;
     }
 
@@ -52,7 +51,7 @@
       top: 68%;
       left: 10%;
       
-      @media(max-width: 1100px) {
+      @include onSmallDesktop {
         position: static;
       }
     }
@@ -62,11 +61,11 @@
       top: 58%;
       left: 30%;
 
-      @media(min-width: 1500px) {
+      @include onBiggerDesktop {
         top: 54%;
       }
       
-      @media(max-width: 1100px) {
+      @include onSmallDesktop {
         position: static;
       }
     }
@@ -76,7 +75,7 @@
       top: 52%;
       left: 50%;
       
-      @media(max-width: 1100px) {
+      @include onSmallDesktop {
         position: static;
       }
     }
@@ -86,11 +85,11 @@
       top: 54%;
       left: 70%;
 
-      @media(min-width: 1500px) {
+      @include onBiggerDesktop {
         top: 57%;
       }
       
-      @media(max-width: 1100px) {
+      @include onSmallDesktop {
         position: static;
       }
     }
@@ -100,23 +99,23 @@
       top: 58%;
       left: 90%;
 
-      @media(min-width: 1500px) {
+      @include onBiggerDesktop {
         top: 52%;
       }
 
-      @media(min-width: 1650px) {
+      @include onLargeDesktop {
         top: 47%;
       }
       
-      @media(min-width: 1750px) {
+      @include onHugeDesktop {
         top: 37%;
       }
 
-      @media(min-width: 1850px) {
+      @include onHugePlusDesktop {
         top: 28%;
       }
       
-      @media(max-width: 1100px) {
+      @include onSmallDesktop {
         position: static;
       }
     }
@@ -127,6 +126,7 @@
       border: 3px solid $color-orange;
       border-radius: 50%;
       transition: transform 0.3s;
+      z-index: 1;
 
       &:hover {
         transform: scale(1.3);
@@ -145,13 +145,9 @@
       opacity: 0;
       transition: 0.3s;
       
-      &:hover {
+      @include onSmallDesktop {
         opacity: 1;
-      }
-
-      @media(max-width: 1100px) {
-        opacity: 1;
-        margin-left: 10px;
+        margin-left: 15px;
       }
 
       @include onMobile {
@@ -159,17 +155,36 @@
       }
     }
 
+    &-line {
+      position: relative;
+      top: 10%;
+      height: 60px;
+      width: 1px;
+      background: $color-grey;
+      z-index: 0;
+
+      @include onSmallDesktop {
+        display: none;
+      }
+    }
+
     &-name {
       color: $color-orange;
-      font-size: 24px;
-      font-weight: bold;
+      font-size: $largeFontSize;
+      font-weight: $fontWeightBold;
+      margin: 0;
     }
 
     &-description {
-      height: 14px;
-      color: #ffffff;
+      height: $normalFontSize;
+      color: $color-whitest;
       font-family: "Source Sans Pro";
-      font-size: 14px;
+      font-size: $normalFontSize;
+      margin: 0;
     }
   }
+}
+
+.our-team__person .our-team__person-img:hover + .our-team__person-info {
+  opacity: 1;
 }
